@@ -2,10 +2,10 @@
   "private": true,
   "sideEffects": false,
   "scripts": {
-    "build": "run-s \"build:*\"",
+    "generate": "unocss './app/**/*.{ts,tsx}' './app/utils/unified/**/*.js' -o ./app/styles/uno.css",
+    "build": "npm run generate && npm run build:remix",
     "build:remix": "remix build",
-    "build:css": "unocss './app/**/*.{ts,tsx}' './app/utils/unified/**/*.js' -o ./app/styles/uno.css",
-    "dev": "run-p \"dev:*\"",
+    "dev": "npm run generate && run-p \"dev:*\"",
     "dev:remix": "remix dev",
     "dev:css": "unocss './app/**/*.{ts,tsx}' './app/utils/unified/**/*.js' -o ./app/styles/uno.css --watch"
   },

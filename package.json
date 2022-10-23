@@ -3,8 +3,8 @@
   "sideEffects": false,
   "scripts": {
     "generate": "unocss './app/**/*.{ts,tsx}' './app/utils/unified/**/*.js' -o ./app/styles/uno.css",
-    "build": "npm run generate && npm run postcss && npm run build:remix",
-    "postcss": "npx postcss -r './app/styles/uno.css'",
+    "build": "npm run generate && npm run build:remix && npm run postcss",
+    "postcss": "npx postcss -r './api/**/*.css'",
     "build:remix": "remix build",
     "dev": "npm run generate && run-p \"dev:*\"",
     "dev:remix": "remix dev",

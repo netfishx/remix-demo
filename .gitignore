@@ -1,5 +1,5 @@
 node_modules
-
+api
 .cache
 .env
 .vercel
@@ -7,6 +7,4 @@ node_modules
 
 /build/
 /public/build
-/api/index.js
-/api/index.js.map
 /app/styles/uno.css

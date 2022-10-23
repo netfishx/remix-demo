@@ -1,7 +1,9 @@
 export default function Index() {
   return (
-    <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.4" }}>
-      <h1 className="text-6xl font-bold" text-red="700">Welcome to Remix</h1>
+    <div style={{ fontFamily: 'system-ui, sans-serif', lineHeight: '1.4' }}>
+      <h1 className="text-6xl font-bold" text-red="700">
+        Welcome to Remix
+      </h1>
       <ul>
         <li>
           <a

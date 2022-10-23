@@ -1,4 +1,4 @@
-import type { LinksFunction, MetaFunction } from "@remix-run/node";
+import type { LinksFunction, MetaFunction } from '@remix-run/node';
 import {
   Links,
   LiveReload,
@@ -6,18 +6,19 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration,
-} from "@remix-run/react";
-import reset from '@unocss/reset/tailwind.css'
-import unocss from '~/styles/uno.css'
+} from '@remix-run/react';
+import reset from '@unocss/reset/tailwind.css';
+
+import unocss from '~/styles/uno.css';
 
 export const links: LinksFunction = () => [
   { rel: 'stylesheet', href: reset },
   { rel: 'stylesheet', href: unocss },
-]
+];
 export const meta: MetaFunction = () => ({
-  charset: "utf-8",
-  title: "New Remix App",
-  viewport: "width=device-width,initial-scale=1",
+  charset: 'utf-8',
+  title: 'New Remix App',
+  viewport: 'width=device-width,initial-scale=1',
 });
 
 export default function App() {
